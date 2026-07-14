@@ -30,7 +30,7 @@ python -m pip install uv
 python -m uv sync
 ```
 
-Python 3.11 or higher is required.
+Python 3.12 or higher is required.
 
 ## Data and corpus
 

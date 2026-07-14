@@ -4,7 +4,7 @@ The project is designed to regenerate Stage 1 to Stage 3 outputs from local file
 
 ## Environment
 
-- Python 3.11 or higher.
+- Python 3.12 or higher.
 - `uv` for dependency management.
 - No paid API keys are required.
 

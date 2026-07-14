@@ -3,7 +3,7 @@ name = "rag-eval-gov"
 version = "0.4.0"
 description = "Local-first evaluation, retrieval and governance foundations for retrieval-augmented generation systems."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "Dr Joseph N. Njiru" }]
 dependencies = [
