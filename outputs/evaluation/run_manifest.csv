@@ -1,0 +1,6 @@
+run_id,run_label,retrieval_method,chunking_method,top_k,reranking_method,query_decomposition_enabled,generator_mode,evaluation_method,created_at
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,baseline_a_tfidf,section-aware word window,5,score_rank,False,deterministic_mock,rule_based_post_generation_evaluation,2026-07-08T17:06:23.146392
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,baseline_b_metadata_weighted_tfidf,section-aware word window,5,score_rank,False,deterministic_mock,rule_based_post_generation_evaluation,2026-07-08T17:06:26.418628
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,baseline_c_bm25,section-aware word window,5,score_rank,False,deterministic_mock,rule_based_post_generation_evaluation,2026-07-08T17:06:29.416421
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,baseline_d_hybrid,section-aware word window,5,score_rank,False,deterministic_mock,rule_based_post_generation_evaluation,2026-07-08T17:06:32.380334
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,baseline_e_decomposition_diversified,section-aware word window,5,diversified,True,deterministic_mock,rule_based_post_generation_evaluation,2026-07-08T17:06:35.326104

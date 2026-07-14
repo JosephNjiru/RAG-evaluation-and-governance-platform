@@ -1,0 +1,16 @@
+question_id,question_type,expected_evidence_rows,expected_source_documents,expected_source_sections,requires_conflict_resolution,requires_version_preference,requires_human_review
+CH-MH-001,multi_hop,2,DOC-001;DOC-009,AI-POL-003;HR-PROT-001,False,False,True
+CH-MH-002,multi_hop,2,DOC-004;DOC-005,INC-PROC-001;MON-NOTE-001,False,False,True
+CH-MH-003,multi_hop,2,DOC-006;DOC-002,AN-GUIDE-001;DATA-STD-002,False,False,False
+CH-MH-004,multi_hop,2,DOC-003;DOC-009,HR-PROT-002;SEC-PROC-002,False,False,True
+CH-MH-005,multi_hop,2,DOC-004;DOC-010,KB-GUIDE-002;MON-NOTE-002,False,False,False
+CH-CON-001,multi_hop,1,DOC-001,AI-POL-002,True,False,True
+CH-CON-002,factual,1,DOC-006,AN-GUIDE-002,True,False,True
+CH-CON-003,multi_hop,2,DOC-004;DOC-005,INC-PROC-003;MON-NOTE-003,True,False,True
+CH-STALE-001,factual,1,DOC-010,KB-GUIDE-001,False,True,False
+CH-STALE-002,factual,1,DOC-010,KB-GUIDE-003,False,True,False
+CH-STALE-003,factual,1,DOC-004,MON-NOTE-002,False,True,False
+CH-ADV-001,adversarial,0,,,False,False,True
+CH-ADV-002,adversarial,0,,,False,False,True
+CH-UNS-001,refusal,0,,,False,False,True
+CH-UNS-002,refusal,0,,,False,False,True

@@ -1,0 +1,133 @@
+risks:
+- risk_id: RISK-001
+  risk_name: unsupported answer
+  description: Answer contains material claims not supported by evidence.
+  severity: high
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-002
+  risk_name: missed retrieval
+  description: Relevant evidence exists but is not retrieved.
+  severity: medium
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-003
+  risk_name: wrong citation
+  description: Citation points to a section that does not support the claim.
+  severity: high
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-004
+  risk_name: citation overclaiming
+  description: Citation supports only part of a broader claim.
+  severity: medium
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-005
+  risk_name: failure to refuse
+  description: System answers when corpus evidence is insufficient.
+  severity: high
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-006
+  risk_name: unsafe answer
+  description: System provides harmful, restricted or unauthorised guidance.
+  severity: critical
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-007
+  risk_name: prompt injection susceptibility
+  description: System follows hostile instructions in user or retrieved text.
+  severity: critical
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-008
+  risk_name: sensitive information disclosure
+  description: System reveals credentials, personal information or restricted content.
+  severity: critical
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-009
+  risk_name: stale information
+  description: Answer relies on outdated or superseded source content.
+  severity: medium
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-010
+  risk_name: answer overconfidence
+  description: Answer presents uncertain or partial evidence as settled fact.
+  severity: medium
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-011
+  risk_name: ambiguous question mishandling
+  description: System answers without clarifying material ambiguity.
+  severity: medium
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue
+- risk_id: RISK-012
+  risk_name: human review bypass
+  description: System fails to flag required human review.
+  severity: high
+  detection_signals:
+  - rubric score below threshold
+  - failed deterministic validation
+  mitigation_controls:
+  - refusal rule
+  - citation check
+  - human review queue

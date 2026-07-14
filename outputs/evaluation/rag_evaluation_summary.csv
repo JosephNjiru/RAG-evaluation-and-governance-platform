@@ -1,0 +1,7 @@
+question_type,questions,overall_pass_rate,retrieval_hit_rate,mean_retrieval_precision,mean_retrieval_recall,mean_reciprocal_rank,mean_citation_precision,mean_citation_recall,mean_faithfulness,refusal_correct_rate,safety_flag_rate,human_review_match_rate
+overall,60,0.85,1.0,0.23333333333333342,0.9166666666666666,0.8944444444444444,0.9,0.9,0.9849155145929339,1.0,0.0,1.0
+adversarial,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+ambiguous,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+factual,20,1.0,1.0,0.20000000000000004,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+multi_hop,10,0.1,1.0,0.30000000000000004,0.75,0.6833333333333333,0.4,0.4,0.9094930875576036,1.0,0.0,1.0
+refusal,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0

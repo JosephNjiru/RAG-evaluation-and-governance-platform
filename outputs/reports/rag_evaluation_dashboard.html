@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RAG evaluation dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }
+    h1, h2 { color: #102a43; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 12px; }
+    .card { border: 1px solid #d9e2ec; border-radius: 6px; padding: 12px; }
+    .value { font-size: 1.6rem; font-weight: 700; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0 24px; }
+    th, td { border: 1px solid #d9e2ec; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f0f4f8; }
+  </style>
+</head>
+<body>
+  <h1>RAG evaluation dashboard</h1>
+  <p>Static dashboard for the local RAG evaluation baseline and Stage 4 hardening checks.</p>
+  <p><strong>Reading note:</strong> headline metrics are screening signals. The corpus is synthetic, the generator is deterministic and human review remains required for high-risk or failed records.</p>
+  <p><strong>Safety note:</strong> no unsafe-answer flags were triggered in this synthetic evaluation run. This does not remove the need for human review or broader safety testing.</p>
+  <section class="grid">
+    <div class="card"><div>Questions</div><div class="value">60</div></div>
+    <div class="card"><div>Overall pass rate</div><div class="value">0.850</div></div>
+    <div class="card"><div>Retrieval hit rate</div><div class="value">1.000</div></div>
+    <div class="card"><div>Citation precision</div><div class="value">0.900</div></div>
+    <div class="card"><div>Citation recall</div><div class="value">0.900</div></div>
+    <div class="card"><div>Faithfulness</div><div class="value">0.985</div></div>
+    <div class="card"><div>Refusal correctness</div><div class="value">1.000</div></div>
+    <div class="card"><div>Human review match</div><div class="value">1.000</div></div>
+  </section>
+  <h2>Baseline comparison</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>baseline_label</th>
+      <th>question_type</th>
+      <th>overall_pass_rate</th>
+      <th>mean_retrieval_recall</th>
+      <th>mean_citation_precision</th>
+      <th>mean_citation_recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline A: TF-IDF lexical retrieval</td>
+      <td>overall</td>
+      <td>0.850000</td>
+      <td>0.916667</td>
+      <td>0.900000</td>
+      <td>0.900000</td>
+    </tr>
+    <tr>
+      <td>Baseline A: TF-IDF lexical retrieval</td>
+      <td>factual</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <td>Baseline A: TF-IDF lexical retrieval</td>
+      <td>multi_hop</td>
+      <td>0.100000</td>
+      <td>0.75</td>
+      <td>0.400000</td>
+      <td>0.400000</td>
+    </tr>
+    <tr>
+      <td>Baseline B: metadata-weighted TF-IDF</td>
+      <td>overall</td>
+      <td>0.850000</td>
+      <td>0.916667</td>
+      <td>0.891667</td>
+      <td>0.891667</td>
+    </tr>
+    <tr>
+      <td>Baseline B: metadata-weighted TF-IDF</td>
+      <td>factual</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <td>Baseline B: metadata-weighted TF-IDF</td>
+      <td>multi_hop</td>
+      <td>0.100000</td>
+      <td>0.75</td>
+      <td>0.350000</td>
+      <td>0.350000</td>
+    </tr>
+    <tr>
+      <td>Baseline C: BM25 lexical retrieval</td>
+      <td>overall</td>
+      <td>0.833333</td>
+      <td>0.9</td>
+      <td>0.891667</td>
+      <td>0.891667</td>
+    </tr>
+    <tr>
+      <td>Baseline C: BM25 lexical retrieval</td>
+      <td>factual</td>
+      <td>0.950000</td>
+      <td>1.0</td>
+      <td>0.950000</td>
+      <td>0.950000</td>
+    </tr>
+    <tr>
+      <td>Baseline C: BM25 lexical retrieval</td>
+      <td>multi_hop</td>
+      <td>0.100000</td>
+      <td>0.7</td>
+      <td>0.450000</td>
+      <td>0.450000</td>
+    </tr>
+    <tr>
+      <td>Baseline D: hybrid lexical retrieval</td>
+      <td>overall</td>
+      <td>0.850000</td>
+      <td>0.883333</td>
+      <td>0.900000</td>
+      <td>0.900000</td>
+    </tr>
+    <tr>
+      <td>Baseline D: hybrid lexical retrieval</td>
+      <td>factual</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <td>Baseline D: hybrid lexical retrieval</td>
+      <td>multi_hop</td>
+      <td>0.100000</td>
+      <td>0.65</td>
+      <td>0.400000</td>
+      <td>0.400000</td>
+    </tr>
+    <tr>
+      <td>Baseline E: multi-hop decomposition plus diversified reranking</td>
+      <td>overall</td>
+      <td>0.866667</td>
+      <td>0.916667</td>
+      <td>0.916667</td>
+      <td>0.916667</td>
+    </tr>
+    <tr>
+      <td>Baseline E: multi-hop decomposition plus diversified reranking</td>
+      <td>factual</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <td>Baseline E: multi-hop decomposition plus diversified reranking</td>
+      <td>multi_hop</td>
+      <td>0.200000</td>
+      <td>0.75</td>
+      <td>0.500000</td>
+      <td>0.500000</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Challenge set result</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>question_type</th>
+      <th>questions</th>
+      <th>pass_rate</th>
+      <th>citation_precision</th>
+      <th>citation_recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>adversarial</td>
+      <td>2</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>factual</td>
+      <td>4</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>multi_hop</td>
+      <td>7</td>
+      <td>0.857143</td>
+      <td>0.928571</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>refusal</td>
+      <td>2</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Question-type breakdown</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>question_type</th>
+      <th>questions</th>
+      <th>overall_pass_rate</th>
+      <th>retrieval_hit_rate</th>
+      <th>mean_retrieval_precision</th>
+      <th>mean_retrieval_recall</th>
+      <th>mean_reciprocal_rank</th>
+      <th>mean_citation_precision</th>
+      <th>mean_citation_recall</th>
+      <th>mean_faithfulness</th>
+      <th>refusal_correct_rate</th>
+      <th>safety_flag_rate</th>
+      <th>human_review_match_rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>overall</td>
+      <td>60</td>
+      <td>0.85</td>
+      <td>1.0</td>
+      <td>0.233333</td>
+      <td>0.916667</td>
+      <td>0.894444</td>
+      <td>0.9</td>
+      <td>0.9</td>
+      <td>0.984916</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>adversarial</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>ambiguous</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>factual</td>
+      <td>20</td>
+      <td>1.00</td>
+      <td>1.0</td>
+      <td>0.2</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>multi_hop</td>
+      <td>10</td>
+      <td>0.10</td>
+      <td>1.0</td>
+      <td>0.3</td>
+      <td>0.75</td>
+      <td>0.683333</td>
+      <td>0.4</td>
+      <td>0.4</td>
+      <td>0.909493</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>refusal</td>
+      <td>10</td>
+      <td>1.00</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Human review queue</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>question_id</th>
+      <th>question_type</th>
+      <th>risk_level</th>
+      <th>evaluation_notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QM-001</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>retrieval did not cover all expected evidence; citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-002</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QM-003</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>retrieval did not cover all expected evidence; citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-004</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-005</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>retrieval did not cover all expected evidence; citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-006</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-007</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-008</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>retrieval did not cover all expected evidence; citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-009</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>retrieval did not cover all expected evidence; citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QM-010</td>
+      <td>multi_hop</td>
+      <td>high</td>
+      <td>citation support did not match expected evidence</td>
+    </tr>
+    <tr>
+      <td>QA-001</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-002</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-003</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-004</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-005</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-006</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-007</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-008</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-009</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QA-010</td>
+      <td>ambiguous</td>
+      <td>medium</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-001</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-002</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-003</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-004</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-005</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-006</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-007</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-008</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-009</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+    <tr>
+      <td>QR-010</td>
+      <td>refusal</td>
+      <td>high</td>
+      <td>Rule-based checks passed for this question.</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Key limitations</h2>
+  <ul>
+    <li>Baseline A TF-IDF performed strongly on factual questions but weakly on multi-hop questions.</li>
+    <li>TF-IDF is lexical and may miss semantic matches.</li>
+    <li>Mock generation is deterministic and not a field model.</li>
+    <li>Deterministic faithfulness checks are screening checks, not final human judgement.</li>
+    <li>Challenge set results are synthetic holdout evidence, not field performance.</li>
+    <li>The challenge set has a different difficulty profile from the original 60-question benchmark and does not replace it.</li>
+    <li>Human review remains necessary for high-risk, unsupported, ambiguous and failed records.</li>
+  </ul>
+</body>
+</html>

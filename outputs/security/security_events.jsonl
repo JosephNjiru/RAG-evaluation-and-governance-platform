@@ -1,0 +1,6 @@
+{"created_at": "2026-07-14T07:49:11.926073", "event_type": "input_security_flag", "flags": ["instruction_override", "secret_request"], "message": "prompt_injection", "severity": "medium", "source": "input"}
+{"created_at": "2026-07-14T07:49:11.926073", "event_type": "input_security_flag", "flags": ["secret_request"], "message": "secret_request", "severity": "medium", "source": "input"}
+{"created_at": "2026-07-14T07:49:11.926073", "event_type": "input_security_flag", "flags": ["unsupported_advice"], "message": "unsupported_advice", "severity": "medium", "source": "input"}
+{"created_at": "2026-07-14T07:49:11.928074", "event_type": "input_security_flag", "flags": ["unbounded_input"], "message": "oversized_input", "severity": "medium", "source": "input"}
+{"created_at": "2026-07-14T07:49:11.928074", "event_type": "context_security_flag", "flags": ["indirect_prompt_injection"], "message": "malicious context", "severity": "medium", "source": "context"}
+{"created_at": "2026-07-14T07:49:11.928074", "event_type": "output_security_flag", "flags": ["citation_not_in_retrieved_context", "excessive_confidence"], "message": "output validation", "severity": "medium", "source": "output"}

@@ -1,0 +1,6 @@
+flowchart LR
+    Metrics[Metric results] --> Risk[Risk register]
+    Metrics --> Review[Human review protocol]
+    Metrics --> Cards[System, data and evaluation cards]
+    Review --> Incidents[Incident response playbook]
+    Risk --> Release[Release checklist]

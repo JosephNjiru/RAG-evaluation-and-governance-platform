@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="774.72pt" height="393.589969pt" viewBox="0 0 774.72 393.589969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-14T16:03:05.763099</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 393.589969 
+L 774.72 393.589969 
+L 774.72 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 131.4 190.285009 
+L 241.2144 190.285009 
+L 241.2144 119.543569 
+L 131.4 119.543569 
+z
+" clip-path="url(#p22a2c152c1)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 243.212901 154.914289 
+Q 249.584928 154.914289 254.838922 154.914289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 250.038922 152.514289 
+L 254.838922 154.914289 
+L 250.038922 157.314289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 257.9544 190.285009 
+L 367.7688 190.285009 
+L 367.7688 119.543569 
+L 257.9544 119.543569 
+z
+" clip-path="url(#p22a2c152c1)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 369.767301 154.914289 
+Q 376.139328 154.914289 381.393322 154.914289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 376.593322 152.514289 
+L 381.393322 154.914289 
+L 376.593322 157.314289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 384.5088 190.285009 
+L 494.3232 190.285009 
+L 494.3232 119.543569 
+L 384.5088 119.543569 
+z
+" clip-path="url(#p22a2c152c1)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 496.321701 154.914289 
+Q 502.693728 154.914289 507.947722 154.914289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 503.147722 152.514289 
+L 507.947722 154.914289 
+L 503.147722 157.314289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 511.0632 190.285009 
+L 620.8776 190.285009 
+L 620.8776 119.543569 
+L 511.0632 119.543569 
+z
+" clip-path="url(#p22a2c152c1)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 622.876101 154.914289 
+Q 629.248128 154.914289 634.502122 154.914289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 629.702122 152.514289 
+L 634.502122 154.914289 
+L 629.702122 157.314289 
+" clip-path="url(#p22a2c152c1)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 637.6176 190.285009 
+L 747.432 190.285009 
+L 747.432 119.543569 
+L 637.6176 119.543569 
+z
+" clip-path="url(#p22a2c152c1)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(164.691028 151.851652)">Retrieved</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(169.019466 162.65341)">sources</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(281.106366 151.8513)">Check version</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(292.817616 162.653761)">and date</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(426.058734 151.8513)">Prefer</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(412.262016 162.653761)">specific rule</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(547.009931 151.8513)">Escalate</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(549.385791 162.653761)">tension</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(659.983472 151.8513)">Human review</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(673.974956 162.653761)">decision</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="97.92" y="17.077969" transform="rotate(-0 97.92 17.077969)">Figure 16. Source-conflict and versioning decision flow</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="7.2" y="384.227859" transform="rotate(-0 7.2 384.227859)">Source conflict handling prefers newer and more specific evidence, with unresolved tension routed to review.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p22a2c152c1">
+   <rect x="97.92" y="23.077969" width="669.6" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

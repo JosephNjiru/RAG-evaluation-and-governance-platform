@@ -1,0 +1,7 @@
+flowchart LR
+    Evaluator[Evaluator] --> Scripts[Local commands]
+    Reviewer[Human reviewer] --> Dashboard[Static dashboard]
+    Scripts --> Platform[RAG evaluation platform]
+    Platform --> Corpus[Synthetic corpus]
+    Platform --> Outputs[Evaluation outputs]
+    Outputs --> Governance[Governance artefacts]

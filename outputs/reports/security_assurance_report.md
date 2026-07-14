@@ -1,0 +1,28 @@
+# Security assurance report
+
+This report records local security assurance checks. It does not claim that the project is secure for production use.
+
+- Checks run: 8
+- Passed checks: 8
+- Flagged event records: 6
+
+## Checks run
+
+| check_name | check_type | passed | flags | notes |
+| --- | --- | --- | --- | --- |
+| normal_question | input_security | True |  |  |
+| prompt_injection | input_security | True | instruction_override;secret_request | Input attempts to override system or policy instructions.; Input requests secrets, credentials or hidden prompts. |
+| secret_request | input_security | True | secret_request | Input requests secrets, credentials or hidden prompts. |
+| unsupported_advice | input_security | True | unsupported_advice | Input requests unsupported high-stakes advice. |
+| oversized_input | input_security | True | unbounded_input | Input exceeds the local request text limit. |
+| indirect_prompt_injection_context | context_security | True | indirect_prompt_injection | Retrieved chunk DOC-X:S1:001 contains instruction-like text. |
+| unsupported_output_controls | output_security | True | citation_not_in_retrieved_context;excessive_confidence | Citations are not in retrieved context: ['DOC-X:S2']; Answer uses excessive confidence language. |
+| secret_scanner | secret_scanner | True |  | findings=0 |
+
+## Known limitations
+
+- Pattern checks can miss novel prompt injection attempts.
+- Secret scanning is lightweight and may produce false positives or miss unusual credentials.
+- Output security checks are screening checks, not expert judgement.
+- Docker hardening is local and does not replace environment-specific security review.
+- Human review remains necessary for high-risk, unsupported, ambiguous and failed records.

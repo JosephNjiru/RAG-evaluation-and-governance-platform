@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="774.72pt" height="393.589969pt" viewBox="0 0 774.72 393.589969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-14T16:02:12.561343</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 393.589969 
+L 774.72 393.589969 
+L 774.72 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 131.4 190.285009 
+L 222.912 190.285009 
+L 222.912 119.543569 
+L 131.4 119.543569 
+z
+" clip-path="url(#p4ed9dd98ba)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 224.910501 154.914289 
+Q 231.282528 154.914289 236.536522 154.914289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 231.736522 152.514289 
+L 236.536522 154.914289 
+L 231.736522 157.314289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 239.652 190.285009 
+L 331.164 190.285009 
+L 331.164 119.543569 
+L 239.652 119.543569 
+z
+" clip-path="url(#p4ed9dd98ba)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 333.162501 154.914289 
+Q 339.534528 154.914289 344.788522 154.914289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 339.988522 152.514289 
+L 344.788522 154.914289 
+L 339.988522 157.314289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 347.904 190.285009 
+L 439.416 190.285009 
+L 439.416 119.543569 
+L 347.904 119.543569 
+z
+" clip-path="url(#p4ed9dd98ba)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 441.414501 154.914289 
+Q 447.786528 154.914289 453.040522 154.914289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 448.240522 152.514289 
+L 453.040522 154.914289 
+L 448.240522 157.314289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 456.156 190.285009 
+L 547.668 190.285009 
+L 547.668 119.543569 
+L 456.156 119.543569 
+z
+" clip-path="url(#p4ed9dd98ba)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 549.666501 154.914289 
+Q 556.038528 154.914289 561.292522 154.914289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 556.492522 152.514289 
+L 561.292522 154.914289 
+L 556.492522 157.314289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 564.408 190.285009 
+L 655.92 190.285009 
+L 655.92 119.543569 
+L 564.408 119.543569 
+z
+" clip-path="url(#p4ed9dd98ba)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 657.918501 154.914289 
+Q 664.290528 154.914289 669.544522 154.914289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+    <path d="M 664.744522 152.514289 
+L 669.544522 154.914289 
+L 664.744522 157.314289 
+" clip-path="url(#p4ed9dd98ba)" style="fill: none; stroke: #6b7280; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 672.66 190.285009 
+L 764.172 190.285009 
+L 764.172 119.543569 
+L 672.66 119.543569 
+z
+" clip-path="url(#p4ed9dd98ba)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(155.910375 151.851652)">Synthetic</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(162.025453 162.65341)">corpus</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(252.778781 146.450422)">Question bank</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(255.108234 157.252882)">and evidence</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(275.410266 168.05464)">map</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(362.501016 151.8513)">Chunking and</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(374.835938 162.653761)">retrieval</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(490.195828 151.8513)">Mock</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(477.438328 162.653761)">generation</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(586.420172 151.8513)">Evaluation</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(594.815484 162.653761)">engine</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(684.021937 151.8513)">Dashboard, API</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(682.001156 162.653761)">and governance</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="97.92" y="17.077969" transform="rotate(-0 97.92 17.077969)">Figure 1. System architecture overview</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="7.2" y="384.227859" transform="rotate(-0 7.2 384.227859)">The platform links corpus design, retrieval, answer generation, evaluation and governance artefacts.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4ed9dd98ba">
+   <rect x="97.92" y="23.077969" width="669.6" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

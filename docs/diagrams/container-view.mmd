@@ -1,0 +1,8 @@
+flowchart TB
+    Scripts[Python scripts] --> Package[rag_eval_gov package]
+    Package --> Ingestion[Ingestion and chunking]
+    Package --> Retrieval[TF-IDF retrieval]
+    Package --> Generation[Mock generation]
+    Package --> Evaluation[Rule-based evaluation]
+    Package --> API[FastAPI service]
+    Evaluation --> Reports[Reports and dashboard]

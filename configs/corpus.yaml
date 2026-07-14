@@ -1,0 +1,21 @@
+source_path: data/corpus/source_documents
+required_metadata_fields:
+  - document_id
+  - title
+  - version
+  - date
+  - owner
+  - risk_domain
+allowed_risk_domains:
+  - governance
+  - data_governance
+  - security
+  - model_monitoring
+  - incident_response
+  - analytics
+  - evaluation
+  - privacy
+  - human_review
+  - knowledge_management
+expected_document_count_min: 8
+expected_document_count_max: 12

@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: python -m pip install uv
+
+      - name: Install dependencies
+        run: python -m uv sync
+
+      - name: Validate Stage 1 assets
+        run: python -m uv run python scripts/validate_stage1_assets.py
+
+      - name: Build vector index
+        run: python -m uv run python scripts/build_vector_index.py
+
+      - name: Run RAG baseline
+        run: python -m uv run python scripts/run_rag_batch.py
+
+      - name: Evaluate outputs
+        run: python -m uv run python scripts/evaluate_rag_outputs.py
+
+      - name: Run retrieval ablation
+        run: python -m uv run python scripts/run_retrieval_ablation.py
+
+      - name: Run improved RAG batch
+        run: python -m uv run python scripts/run_improved_rag_batch.py
+
+      - name: Evaluate challenge set
+        run: python -m uv run python scripts/evaluate_challenge_set.py
+
+      - name: Build evaluation dashboard
+        run: python -m uv run python scripts/build_evaluation_dashboard.py
+
+      - name: Package static dashboard
+        run: python -m uv run python dashboard/build_dashboard.py
+
+      - name: Build reproducibility manifest
+        run: python -m uv run python scripts/build_reproducibility_manifest.py
+
+      - name: Smoke test API
+        run: python -m uv run python scripts/smoke_test_api.py
+
+      - name: Run security checks
+        run: python -m uv run python scripts/run_security_checks.py
+
+      - name: Security smoke test
+        run: python -m uv run python scripts/security_smoke_test.py
+
+      - name: Generate figures
+        run: |
+          python -m uv run python scripts/generate_publication_figures.py
+          python -m uv run python scripts/generate_slide_figures.py
+          python -m uv run python scripts/generate_figure_catalog.py
+          python -m uv run python scripts/generate_visual_abstract.py
+
+      - name: Run tests
+        run: python -m uv run pytest
+
+      - name: Run ruff
+        run: python -m uv run ruff check .
+
+      - name: Check formatting
+        run: python -m uv run ruff format --check .
+
+      - name: Run quality scan
+        run: python -m uv run python scripts/quality_scan.py
+
+      - name: Validate YAML files
+        run: python -m uv run python -c "import pathlib, yaml; [yaml.safe_load(p.read_text()) for p in pathlib.Path('.').rglob('*.yml')]; [yaml.safe_load(p.read_text()) for p in pathlib.Path('.').rglob('*.yaml')]"
+
+      - name: Check Docker Compose config
+        run: docker compose config

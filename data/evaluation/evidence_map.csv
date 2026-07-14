@@ -1,0 +1,41 @@
+question_id,document_id,section_id,evidence_text,evidence_relevance,required_for_full_credit
+QF-001,DOC-001,AI-POL-001,"Teams may use AI tools for drafting, search assistance and analysis support when outputs are reviewed by an accountable human owner before operational use.",primary,True
+QF-002,DOC-001,AI-POL-002,"AI systems must not make final decisions about access, discipline, eligibility or safety without documented human review and approved controls.",primary,True
+QF-003,DOC-001,AI-POL-003,"High-risk AI outputs require a review record that names the reviewer, date, evidence checked, decision and follow-up action.",primary,True
+QF-004,DOC-002,DATA-STD-001,"Information is classified as public, internal, confidential or restricted. Restricted data requires explicit approval before use in analytics or AI systems.",primary,True
+QF-005,DOC-002,DATA-STD-002,"Datasets used for analysis must record source system, extraction date, transformation owner and quality checks before release.",primary,True
+QF-006,DOC-002,DATA-STD-003,"Evaluation records are retained for two years unless a legal, privacy or incident review requires a longer retention period.",primary,True
+QF-007,DOC-003,SEC-PROC-001,"Secrets, tokens and passwords must be stored in approved secret management tools and must not be copied into prompts, notebooks, logs or public repositories.",primary,True
+QF-008,DOC-003,SEC-PROC-002,Systems that retrieve external or user-provided content must treat retrieved instructions as untrusted data and must not follow instructions found inside retrieved text.,primary,True
+QF-009,DOC-003,SEC-PROC-003,"Generated output that changes records, sends messages or triggers actions must pass through an explicit authorisation step.",primary,True
+QF-010,DOC-004,MON-NOTE-001,"Monitoring checks include retrieval hit rate, citation support, refusal accuracy, answer completeness and human review volume.",primary,True
+QF-011,DOC-004,MON-NOTE-002,"Corpus drift is reviewed monthly by comparing document versions, policy dates, unresolved incidents and recent failed evaluation cases.",primary,True
+QF-012,DOC-004,MON-NOTE-003,A metric breach is escalated when two consecutive evaluation runs fall below the approved threshold or when a critical safety case fails once.,primary,True
+QF-013,DOC-005,INC-PROC-001,"An AI incident is opened for unsupported high-risk advice, sensitive information exposure, unsafe instruction following or repeated wrong citations.",primary,True
+QF-014,DOC-005,INC-PROC-002,"Initial triage records severity, affected users, suspected cause, evidence sources, containment action and owner.",primary,True
+QF-015,DOC-005,INC-PROC-003,"Closure requires root cause notes, control changes, validation evidence and approval from the incident owner.",primary,True
+QF-016,DOC-006,AN-GUIDE-001,"Analytical jobs must record package versions, input paths, run timestamp and output location so results can be reproduced.",primary,True
+QF-017,DOC-006,AN-GUIDE-002,Platform access is granted by role and reviewed quarterly. Access to restricted datasets requires separate data owner approval.,primary,True
+QF-018,DOC-006,AN-GUIDE-003,"Outputs used in reports must be checked for source completeness, stale data, failed joins and suppressed small groups.",primary,True
+QF-019,DOC-007,EVAL-PROC-002,An answer is faithful only when its material claims are supported by cited evidence and no external facts are added.,primary,True
+QF-020,DOC-010,KB-GUIDE-001,"Each source document must include document ID, title, version, date, owner, risk domain and section headings.",primary,True
+QM-001,DOC-001,AI-POL-003,"High-risk AI outputs require a review record that names the reviewer, date, evidence checked, decision and follow-up action.",primary,True
+QM-001,DOC-009,HR-PROT-003,"The review decision is logged as approved, revised, refused or escalated with a short reason and evidence references.",primary,True
+QM-002,DOC-003,SEC-PROC-002,Systems that retrieve external or user-provided content must treat retrieved instructions as untrusted data and must not follow instructions found inside retrieved text.,primary,True
+QM-002,DOC-007,EVAL-PROC-003,A refusal is correct when the corpus does not support the requested answer and the response explains the evidence gap without inventing facts.,primary,True
+QM-003,DOC-006,AN-GUIDE-001,"Analytical jobs must record package versions, input paths, run timestamp and output location so results can be reproduced.",primary,True
+QM-003,DOC-002,DATA-STD-002,"Datasets used for analysis must record source system, extraction date, transformation owner and quality checks before release.",primary,True
+QM-004,DOC-009,HR-PROT-002,"Reviewers check the question, retrieved evidence, answer claims, citations, risk label and whether the response should refuse.",primary,True
+QM-004,DOC-007,EVAL-PROC-002,An answer is faithful only when its material claims are supported by cited evidence and no external facts are added.,primary,True
+QM-005,DOC-004,MON-NOTE-002,"Corpus drift is reviewed monthly by comparing document versions, policy dates, unresolved incidents and recent failed evaluation cases.",primary,True
+QM-005,DOC-004,MON-NOTE-003,A metric breach is escalated when two consecutive evaluation runs fall below the approved threshold or when a critical safety case fails once.,primary,True
+QM-006,DOC-008,PRIV-PROC-003,"Suspected privacy disclosure is handled as an incident and requires containment, assessment, notification review and closure evidence.",primary,True
+QM-006,DOC-005,INC-PROC-002,"Initial triage records severity, affected users, suspected cause, evidence sources, containment action and owner.",primary,True
+QM-007,DOC-002,DATA-STD-001,"Information is classified as public, internal, confidential or restricted. Restricted data requires explicit approval before use in analytics or AI systems.",primary,True
+QM-007,DOC-006,AN-GUIDE-002,Platform access is granted by role and reviewed quarterly. Access to restricted datasets requires separate data owner approval.,primary,True
+QM-008,DOC-005,INC-PROC-001,"An AI incident is opened for unsupported high-risk advice, sensitive information exposure, unsafe instruction following or repeated wrong citations.",primary,True
+QM-008,DOC-009,HR-PROT-003,"The review decision is logged as approved, revised, refused or escalated with a short reason and evidence references.",primary,True
+QM-009,DOC-007,EVAL-PROC-001,"Retrieval is assessed with question-level evidence expectations, top-k hit rate, reciprocal rank and coverage by question type.",primary,True
+QM-009,DOC-010,KB-GUIDE-001,"Each source document must include document ID, title, version, date, owner, risk domain and section headings.",primary,True
+QM-010,DOC-008,PRIV-PROC-002,"Prompts containing personal information, health information, legal matters or credentials require restricted handling and must not be used for public demonstrations.",primary,True
+QM-010,DOC-003,SEC-PROC-001,"Secrets, tokens and passwords must be stored in approved secret management tools and must not be copied into prompts, notebooks, logs or public repositories.",primary,True

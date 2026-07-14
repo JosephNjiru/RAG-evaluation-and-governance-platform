@@ -1,0 +1,7 @@
+flowchart TB
+    Assets[Evaluation assets] --> Baseline[RAG baseline]
+    Baseline --> Metrics[Deterministic metrics]
+    Metrics --> Judge[Rule-based judge]
+    Judge --> Report[Evaluation report]
+    Report --> Review[Human review queue]
+    Review --> Improvements[Improvement backlog]

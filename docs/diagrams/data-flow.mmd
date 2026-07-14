@@ -1,0 +1,10 @@
+flowchart LR
+    Docs[Markdown corpus] --> Chunks[Source-linked chunks]
+    Chunks --> Index[TF-IDF index]
+    Questions[Question bank] --> Retrieval[Top-k retrieval]
+    Index --> Retrieval
+    Retrieval --> Answers[Structured answers]
+    Answers --> Evaluation[Evaluation engine]
+    Evidence[Evidence map] --> Evaluation
+    Evaluation --> Reports[Reports and dashboard]
+    Evaluation --> Governance[Governance controls]

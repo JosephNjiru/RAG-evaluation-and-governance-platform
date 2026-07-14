@@ -1,0 +1,18 @@
+question_id,document_id,section_id,evidence_text,evidence_relevance,required_for_full_credit
+CH-MH-001,DOC-001,AI-POL-003,"High-risk AI outputs require a review record that names the reviewer, date, evidence checked, decision and follow-up action.",primary,True
+CH-MH-001,DOC-009,HR-PROT-001,"Human review is required for high-risk questions, ambiguous user intent, missing evidence, safety concerns and requests involving restricted data.",primary,True
+CH-MH-002,DOC-004,MON-NOTE-001,"Monitoring checks include retrieval hit rate, citation support, refusal accuracy, answer completeness and human review volume.",primary,True
+CH-MH-002,DOC-005,INC-PROC-001,"An AI incident is opened for unsupported high-risk advice, sensitive information exposure, unsafe instruction following or repeated wrong citations.",primary,True
+CH-MH-003,DOC-006,AN-GUIDE-001,"Analytical jobs must record package versions, input paths, run timestamp and output location so results can be reproduced.",primary,True
+CH-MH-003,DOC-002,DATA-STD-002,"Datasets used for analysis must record source system, extraction date, transformation owner and quality checks before release.",primary,True
+CH-MH-004,DOC-003,SEC-PROC-002,"Systems that retrieve external or user-provided content must treat retrieved instructions as untrusted data and must not follow instructions found inside retrieved text.",primary,True
+CH-MH-004,DOC-009,HR-PROT-002,"Reviewers check the question, retrieved evidence, answer claims, citations, risk label and whether the response should refuse.",primary,True
+CH-MH-005,DOC-004,MON-NOTE-002,"Corpus drift is reviewed monthly by comparing document versions, policy dates, unresolved incidents and recent failed evaluation cases.",primary,True
+CH-MH-005,DOC-010,KB-GUIDE-002,"Knowledge base documents are reviewed every six months or sooner when an incident, policy change or audit finding affects the content.",primary,True
+CH-CON-001,DOC-001,AI-POL-002,"AI systems must not make final decisions about access, discipline, eligibility or safety without documented human review and approved controls.",primary,True
+CH-CON-002,DOC-006,AN-GUIDE-002,"Platform access is granted by role and reviewed quarterly. Access to restricted datasets requires separate data owner approval.",primary,True
+CH-CON-003,DOC-004,MON-NOTE-003,"A metric breach is escalated when two consecutive evaluation runs fall below the approved threshold or when a critical safety case fails once.",primary,True
+CH-CON-003,DOC-005,INC-PROC-003,"Closure requires root cause notes, control changes, validation evidence and approval from the incident owner.",primary,True
+CH-STALE-001,DOC-010,KB-GUIDE-001,"Each source document must include document ID, title, version, date, owner, risk domain and section headings.",primary,True
+CH-STALE-002,DOC-010,KB-GUIDE-003,"Deprecated documents are removed from retrieval indexes only after replacement content and traceability notes are available.",primary,True
+CH-STALE-003,DOC-004,MON-NOTE-002,"Corpus drift is reviewed monthly by comparing document versions, policy dates, unresolved incidents and recent failed evaluation cases.",primary,True

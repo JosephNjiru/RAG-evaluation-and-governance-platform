@@ -1,0 +1,51 @@
+{
+  "command_sequence": [
+    "python -m uv run python scripts/validate_stage1_assets.py",
+    "python -m uv run python scripts/build_vector_index.py",
+    "python -m uv run python scripts/run_rag_batch.py",
+    "python -m uv run python scripts/evaluate_rag_outputs.py",
+    "python -m uv run python scripts/run_retrieval_ablation.py",
+    "python -m uv run python scripts/run_improved_rag_batch.py",
+    "python -m uv run python scripts/evaluate_challenge_set.py",
+    "python -m uv run python scripts/build_evaluation_dashboard.py",
+    "python -m uv run python scripts/build_reproducibility_manifest.py"
+  ],
+  "config_hashes": {
+    "configs/corpus.yaml": "f396a8decb470fc24950b281452e23473bea11916cc8754454a612f746062ab9",
+    "configs/evaluation_rubrics.yaml": "1d37d541c99581b2f452527f87c6db1e74b6171c9c8c5e72ab41748cc73e46a5",
+    "configs/project.yaml": "da14b3dee0c157acdc188b60089f92a1763a71f89ad1d36068f433182d231f58",
+    "configs/risk_taxonomy.yaml": "109f1a8339f9d0284f895f42e2f348cb92aebeb3ad49569508c71d38b72a033e"
+  },
+  "corpus_file_hashes": {
+    "data/corpus/source_documents/doc-001-ai-use-policy.md": "96142bddf5bf2297a6b46fefc7171f03395d33db824a9807cd5100f2afa05f78",
+    "data/corpus/source_documents/doc-002-data-governance-standard.md": "4653e984f741eef089b0b87d77ea79d21e12d824b80a2eefbf57ce1882028329",
+    "data/corpus/source_documents/doc-003-security-procedure.md": "48825227908580d285ed5688818af1c681f7677cbba2527a13b950e7b5be62e1",
+    "data/corpus/source_documents/doc-004-model-monitoring-notes.md": "f35185f833b7427add51bc3b777af8e13541b003e0e5468acc0c7bb5a91b451b",
+    "data/corpus/source_documents/doc-005-incident-response-procedure.md": "69d13c6569098d4fa8850f862a4faec346aa748afc2f57f29663249ca2ec322f",
+    "data/corpus/source_documents/doc-006-analytics-platform-guide.md": "d2f0b067275cf3f423fc3311b4e89d49a6a4ed3aa8e98dccf16b7e34c3c405c9",
+    "data/corpus/source_documents/doc-007-rag-evaluation-procedure.md": "ac1ccad53c99acdfe597dec7a859de4f072a3eca4ee079fc0bf13df640e299ed",
+    "data/corpus/source_documents/doc-008-privacy-handling-procedure.md": "91d1537d34e89285a6eec6c8c79ee1c11eefc46fbe5c4979b279283ccce8f201",
+    "data/corpus/source_documents/doc-009-human-review-protocol.md": "56edae2b6932b0c77c26a826d2e2ac7cb046f39c7f821fffb65d9802b0e979b5",
+    "data/corpus/source_documents/doc-010-knowledge-base-maintenance-guide.md": "9891d61251081a798aa2a3b3cf869ba1309528b054e157bd44fc5fa5062c8e32"
+  },
+  "evaluation_method": "rule_based_evidence_map_evaluation",
+  "evidence_map_hash": "f0a357dddd991b458ffdfe4926d6d243d61ddae7bc14dc8c0c3f001181802d72",
+  "output_file_hashes": {
+    "outputs/answers/improved_rag_answers.parquet": "cd1179e976c0c1995fa0c7955f0d13db9977a9437a2415dca8357acc9fe73c6c",
+    "outputs/answers/rag_answers.parquet": "2ca8f2a8c25a5114d0ba66c8644f526c583ca27227118808ac755342657e5bb5",
+    "outputs/evaluation/challenge_evaluation_results.parquet": "a6eec53db8728019d8c7139fa2cec0e7fbc30a8ab50885e8e88a0dc58c8d33da",
+    "outputs/evaluation/rag_evaluation_results.parquet": "659c8112e04cd51806bcfe4b2ef3cf183ec7cc8a234025b2518cd64e9a2c28c8",
+    "outputs/evaluation/retrieval_ablation_results.csv": "6afcf9d3d739f59601bb87651fa14be254a04975645119727110d9c5799a3491",
+    "outputs/reports/baseline_comparison_report.md": "39bf9fdf414f84076b57a218931ee23bc51bf43b2e54b6f9e37a3bb8030989ad",
+    "outputs/reports/challenge_set_report.md": "1f94fc16ea6b34d27a8c84275c032d1a9d802f0b6958d4d1717333046d91d7a8",
+    "outputs/reports/rag_evaluation_dashboard.html": "81baf03e9a1d644f5613fab5c73238f069b1ba96ba04b261c3bf4da41505c4fb"
+  },
+  "package_version": "0.4.0",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "question_bank_hash": "e48dd9938f964670ef92c0c8ec50bd3626f4653ce02b6f2ccc7352d7c04ef4da",
+  "random_seed": null,
+  "reference_answer_hash": "50ab90e54991e8c7f2494fe798bf41ca43b6fe4ff1a4dca829ddc4eae88c75e1",
+  "retrieval_method": "Baseline A through Baseline E ablation; improved uses Baseline E",
+  "timestamp": "2026-07-08T17:06:51.651773"
+}

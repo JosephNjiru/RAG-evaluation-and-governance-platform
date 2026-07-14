@@ -1,0 +1,31 @@
+retrieval_method,baseline_label,question_type,questions,overall_pass_rate,retrieval_hit_rate,mean_retrieval_precision,mean_retrieval_recall,mean_reciprocal_rank,mean_citation_precision,mean_citation_recall,mean_faithfulness,refusal_correct_rate,safety_flag_rate,human_review_match_rate
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,overall,60,0.85,1.0,0.23333333333333342,0.9166666666666666,0.8944444444444444,0.9,0.9,0.9849155145929339,1.0,0.0,1.0
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,adversarial,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,ambiguous,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,factual,20,1.0,1.0,0.20000000000000004,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,multi_hop,10,0.1,1.0,0.30000000000000004,0.75,0.6833333333333333,0.4,0.4,0.9094930875576036,1.0,0.0,1.0
+baseline_a_tfidf,Baseline A: TF-IDF lexical retrieval,refusal,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,overall,60,0.85,1.0,0.23333333333333342,0.9166666666666666,0.8916666666666667,0.8916666666666667,0.8916666666666667,0.9858862433862434,1.0,0.0,1.0
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,adversarial,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,ambiguous,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,factual,20,1.0,1.0,0.20000000000000004,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,multi_hop,10,0.1,1.0,0.30000000000000004,0.75,0.675,0.35,0.35,0.9153174603174603,1.0,0.0,1.0
+baseline_b_metadata_weighted_tfidf,Baseline B: metadata-weighted TF-IDF,refusal,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,overall,60,0.8333333333333334,1.0,0.22666666666666674,0.9,0.9,0.8916666666666667,0.8916666666666667,0.993010752688172,1.0,0.0,1.0
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,adversarial,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,ambiguous,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,factual,20,0.95,1.0,0.20000000000000004,1.0,0.975,0.95,0.95,1.0,1.0,0.0,1.0
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,multi_hop,10,0.1,1.0,0.2800000000000001,0.7,0.75,0.45,0.45,0.9580645161290322,1.0,0.0,1.0
+baseline_c_bm25,Baseline C: BM25 lexical retrieval,refusal,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,overall,60,0.85,1.0,0.22000000000000008,0.8833333333333333,0.8972222222222221,0.9,0.9,0.993010752688172,1.0,0.0,1.0
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,adversarial,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,ambiguous,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,factual,20,1.0,1.0,0.20000000000000004,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,multi_hop,10,0.1,1.0,0.26000000000000006,0.65,0.6916666666666667,0.4,0.4,0.9580645161290322,1.0,0.0,1.0
+baseline_d_hybrid,Baseline D: hybrid lexical retrieval,refusal,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,overall,60,0.8666666666666667,1.0,0.23333333333333342,0.9166666666666666,0.9055555555555556,0.9166666666666666,0.9166666666666666,0.9861142009640341,1.0,0.0,1.0
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,adversarial,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,ambiguous,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,factual,20,1.0,1.0,0.20000000000000004,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,multi_hop,10,0.2,1.0,0.30000000000000004,0.75,0.7166666666666666,0.5,0.5,0.9166852057842046,1.0,0.0,1.0
+baseline_e_decomposition_diversified,Baseline E: multi-hop decomposition plus diversified reranking,refusal,10,1.0,,,,,1.0,1.0,1.0,1.0,0.0,1.0

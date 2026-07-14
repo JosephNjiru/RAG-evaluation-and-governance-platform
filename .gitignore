@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local generated logs and temporary files
+*.log
+tmp/
+temp/
+outputs/tmp/
+outputs/review_images/
+outputs/pdf/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.agents/
+.codex/
+figures/export/linkedin/
+
+# Large local artefacts kept out of source control
+models/
+*.bin
+*.gguf
+*.safetensors

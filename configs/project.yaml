@@ -1,0 +1,17 @@
+project_title: RAG Evaluation and Governance Platform
+package_name: rag_eval_gov
+stage: 1
+approved_risk_levels:
+  - low
+  - medium
+  - high
+  - critical
+approved_question_types:
+  - factual
+  - multi_hop
+  - ambiguous
+  - refusal
+  - adversarial
+answerable_question_types:
+  - factual
+  - multi_hop

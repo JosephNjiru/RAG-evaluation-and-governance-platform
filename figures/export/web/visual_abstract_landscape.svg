@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="974.16pt" height="554.4pt" viewBox="0 0 974.16 554.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-14T15:47:12.274547</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 554.4
+L 974.16 554.4
+L 974.16 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 7.2 547.2
+L 966.96 547.2
+L 966.96 7.2
+L 7.2 7.2
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #fbfcfe"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 31.194 528.3
+L 942.966 528.3
+L 942.966 31.5
+L 31.194 31.5
+L 31.194 528.3
+z
+" clip-path="url(#peea58e6a0e)" style="fill: none; stroke: #2f5d8c; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 31.194 51.48
+L 942.966 51.48
+L 942.966 31.5
+L 31.194 31.5
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #2f5d8c"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 69.5844 261
+L 242.3412 261
+Q 256.7376 261 256.7376 252.9
+L 256.7376 163.8
+Q 256.7376 155.7 242.3412 155.7
+L 69.5844 155.7
+Q 55.188 155.7 55.188 163.8
+L 55.188 252.9
+Q 55.188 261 69.5844 261
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #ffffff; stroke: #2f5d8c; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 285.5304 261
+L 458.2872 261
+Q 472.6836 261 472.6836 252.9
+L 472.6836 163.8
+Q 472.6836 155.7 458.2872 155.7
+L 285.5304 155.7
+Q 271.134 155.7 271.134 163.8
+L 271.134 252.9
+Q 271.134 261 285.5304 261
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #ffffff; stroke: #2a9d8f; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 501.4764 261
+L 674.2332 261
+Q 688.6296 261 688.6296 252.9
+L 688.6296 163.8
+Q 688.6296 155.7 674.2332 155.7
+L 501.4764 155.7
+Q 487.08 155.7 487.08 163.8
+L 487.08 252.9
+Q 487.08 261 501.4764 261
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #ffffff; stroke: #7b6dad; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 717.4224 261
+L 890.1792 261
+Q 904.5756 261 904.5756 252.9
+L 904.5756 163.8
+Q 904.5756 155.7 890.1792 155.7
+L 717.4224 155.7
+Q 703.026 155.7 703.026 163.8
+L 703.026 252.9
+Q 703.026 261 717.4224 261
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #ffffff; stroke: #e76f51; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 69.5844 420.3
+L 258.17724 420.3
+Q 272.57364 420.3 272.57364 412.2
+L 272.57364 352.8
+Q 272.57364 344.7 258.17724 344.7
+L 69.5844 344.7
+Q 55.188 344.7 55.188 352.8
+L 55.188 412.2
+Q 55.188 420.3 69.5844 420.3
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #f3f6fa; stroke: #2f5d8c; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 285.05052 420.3
+L 473.64336 420.3
+Q 488.03976 420.3 488.03976 412.2
+L 488.03976 352.8
+Q 488.03976 344.7 473.64336 344.7
+L 285.05052 344.7
+Q 270.65412 344.7 270.65412 352.8
+L 270.65412 412.2
+Q 270.65412 420.3 285.05052 420.3
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #f3f6fa; stroke: #2a9d8f; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 500.51664 420.3
+L 689.10948 420.3
+Q 703.50588 420.3 703.50588 412.2
+L 703.50588 352.8
+Q 703.50588 344.7 689.10948 344.7
+L 500.51664 344.7
+Q 486.12024 344.7 486.12024 352.8
+L 486.12024 412.2
+Q 486.12024 420.3 500.51664 420.3
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #f3f6fa; stroke: #e76f51; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 715.98276 420.3
+L 904.5756 420.3
+Q 918.972 420.3 918.972 412.2
+L 918.972 352.8
+Q 918.972 344.7 904.5756 344.7
+L 715.98276 344.7
+Q 701.58636 344.7 701.58636 352.8
+L 701.58636 412.2
+Q 701.58636 420.3 715.98276 420.3
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #f3f6fa; stroke: #7b6dad; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 69.5844 485.1
+L 904.5756 485.1
+Q 918.972 485.1 918.972 477
+L 918.972 441.9
+Q 918.972 433.8 904.5756 433.8
+L 69.5844 433.8
+Q 55.188 433.8 55.188 441.9
+L 55.188 477
+Q 55.188 485.1 69.5844 485.1
+z
+" clip-path="url(#peea58e6a0e)" style="fill: #fff7ed; stroke: #e76f51; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="64.7856" y="99.516563" transform="rotate(-0 64.7856 99.516563)">RAG Evaluation and Governance Platform</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6b7280" x="64.7856" y="125.878359" transform="rotate(-0 64.7856 125.878359)">A local-first assurance project for testing retrieval quality, citation support, faithfulness, refusal</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6b7280" x="64.7856" y="143.158359" transform="rotate(-0 64.7856 143.158359)">behaviour and governance readiness.</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #2f5d8c" x="83.9808" y="196.518047" transform="rotate(-0 83.9808 196.518047)">Problem</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="83.9808" y="217.542609" transform="rotate(-0 83.9808 217.542609)">Fluent RAG answers can</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="83.9808" y="230.502609" transform="rotate(-0 83.9808 230.502609)">still be unsupported or</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="83.9808" y="243.462609" transform="rotate(-0 83.9808 243.462609)">wrongly cited.</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #2a9d8f" x="299.9268" y="196.518047" transform="rotate(-0 299.9268 196.518047)">Method</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="299.9268" y="217.542609" transform="rotate(-0 299.9268 217.542609)">Measure retrieval,</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="299.9268" y="230.502609" transform="rotate(-0 299.9268 230.502609)">citations, faithfulness,</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="299.9268" y="243.462609" transform="rotate(-0 299.9268 243.462609)">refusal and safety</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="299.9268" y="256.422609" transform="rotate(-0 299.9268 256.422609)">signals.</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #7b6dad" x="515.8728" y="196.518047" transform="rotate(-0 515.8728 196.518047)">Result</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="515.8728" y="217.542609" transform="rotate(-0 515.8728 217.542609)">Baseline E improves</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="515.8728" y="230.502609" transform="rotate(-0 515.8728 230.502609)">overall pass rate from</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="515.8728" y="243.461914" transform="rotate(-0 515.8728 243.461914)">0.850 to 0.867.</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #e76f51" x="731.8188" y="196.518047" transform="rotate(-0 731.8188 196.518047)">Limit</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="731.8188" y="217.542609" transform="rotate(-0 731.8188 217.542609)">Multi-hop pass rate</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="731.8188" y="230.502609" transform="rotate(-0 731.8188 230.502609)">remains weak at 0.200 on</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="731.8188" y="243.462609" transform="rotate(-0 731.8188 243.462609)">the main benchmark.</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #2f5d8c" x="82.06128" y="383.096484" transform="rotate(-0 82.06128 383.096484)">0.850</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="82.06128" y="401.606625" transform="rotate(-0 82.06128 401.606625)">Baseline A</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #2a9d8f" x="297.5274" y="383.096484" transform="rotate(-0 297.5274 383.096484)">0.867</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="297.5274" y="401.606625" transform="rotate(-0 297.5274 401.606625)">Baseline E</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #e76f51" x="512.99352" y="383.096484" transform="rotate(-0 512.99352 383.096484)">0.200</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="512.99352" y="401.606625" transform="rotate(-0 512.99352 401.606625)">Multi-hop E</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #7b6dad" x="728.45964" y="383.096484" transform="rotate(-0 728.45964 383.096484)">0.917</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="728.45964" y="401.606625" transform="rotate(-0 728.45964 401.606625)">Citation E</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="88.7796" y="460.998516" transform="rotate(-0 88.7796 460.998516)">Interpretation: retrieval improvement is useful but modest. Challenge-set results are separate from</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1f2937" x="88.7796" y="473.958516" transform="rotate(-0 88.7796 473.958516)">the main 60-question benchmark.</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6b7280" x="64.7856" y="519.70834" transform="rotate(-0 64.7856 519.70834)">Synthetic corpus. Deterministic generator. Human review remains necessary for high-risk outputs.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="peea58e6a0e">
+   <rect x="7.2" y="7.2" width="959.76" height="540"/>
+  </clipPath>
+ </defs>
+</svg>
